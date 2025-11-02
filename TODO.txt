@@ -1,0 +1,13 @@
+1. Provide more domain knowledge about type of documents
+2. Maybe is better to process each attachment with the description together and then combining extracted output
+3. *** detect orientation in pdfs/photos and rearrange when needed***
+4. *** Not supported extensions and file types, like zip
+
+- If find more than one posibility: for example, 3 columns Invoice number, reference, and reference no. It is better to get all the potential numbers, generating false positives, than missing one true positive.
+- *** Handle too long inputs, we can either truncate the text or chunk it and process it in different runs ***--> 
+- Explain in system prompt that if in an invoice from the supplier, client reference is the invoice reference number (since volvo is the client).***
+  Something like note that the documents are usually documents submitted by the supplier, so when they refere to "client" in those documents, it use to be us (volvo cars) and our entities
+- Maybe add to return "ship to" field as well, suggested by ptp people that could be relevant
+- *** order number is not purchase order***--> sometimes the model thinks that order number and purchase order is the same, if it continues like this, say explicitly that the order number is not the purchase order
+
+- Add read me with set up instructions
