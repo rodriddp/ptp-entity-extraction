@@ -3,9 +3,9 @@
 .ptp-entity-extraction
 # data
 data/cases/*
-data/outputs/entity_extraction/*
+#data/outputs/entity_extraction/*
 data/outputs/tickets/*
-data/outputs/ticket_classification/*
+#data/outputs/ticket_classification/*
 data/inputs/secrets/secrets.txt
 # models
 data/inputs/models/*
